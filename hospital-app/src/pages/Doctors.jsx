@@ -60,7 +60,7 @@ const Doctors = () => {
 
       {/* SAĞ TƏRƏF */}
       <div className="section_right">
-        {/* Axtarış Girişi (section_right_1) */}
+        {/* Axtarış Girişi */}
         <div className="section_right_1">
           <input
             type="text"
@@ -69,29 +69,26 @@ const Doctors = () => {
             onChange={(e) => setSearchTerm(e.target.value)}
           />
         </div>
-{/* Kartlarımın siyahısı (section_right_2) */}
-<div className="section_right_2">
-  <div className="section_right_2_card">
-    {filteredDoctors.map((doc) => (
-      /* Bütün həkim məlumatları bu div-in içində olmalıdır */
-      <div key={doc.id} className={`section_right_2_card${doc.id}`}>
-        <img src={doc.img} alt={doc.name} />
-        <h3>{doc.name}</h3>
-        <p>{doc.specialty}</p>
 
-        {/* Link MÜTLƏQ map-in içində, yəni burada olmalıdır */}
-        <Link to={`/doctor/${doc.id}`} className="details_btn">
-          Ətraflı bax
-        </Link>
-      </div>
-    ))}
+        {/* Kartların siyahısı - Burada map birbaşa div yaradır */}
+        <div className="section_right_2">
+          {filteredDoctors.map((doc) => (
+            <div key={doc.id} className={`section_right_2_card${doc.id} doctor_card_base`}>
+              <img src={doc.img} alt={doc.name} />
+              <h3>{doc.name}</h3>
+              <p>{doc.specialty}</p>
 
-    {/* Axtarış nəticəsi tapılmadıqda bura işləyir */}
-    {filteredDoctors.length === 0 && (
-      <p className="no-result">Axtarışa uyğun həkim tapılmadı.</p>
-    )}
-  </div>
-</div>
+              <Link to={`/doctor/${doc.id}`} className="details_btn">
+                Ətraflı bax
+              </Link>
+            </div>
+          ))}
+
+          {/* Axtarış nəticəsi tapılmadıqda */}
+          {filteredDoctors.length === 0 && (
+            <p className="no-result">Axtarışa uyğun həkim tapılmadı.</p>
+          )}
+        </div>
       </div>
     </section>
   );

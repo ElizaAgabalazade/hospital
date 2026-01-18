@@ -1,109 +1,110 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
+/* Ana konteyner - Sol və Sağın yan-yana durması üçün */
 section {
     display: flex;
-    width: 100%
+    width: 100%;
+    max-width: 1280px; /* Standart ekran ölçüsü */
+    margin: 0 auto;    /* Ortalanma */
+    padding: 40px 0;
+    align-items: flex-start;
 }
 
+/* --- SOL TƏRƏF (40%) --- */
 .section_left {
     width: 40%;
-    margin-left: 3rem;
-    position: relative;
+    padding: 0 2rem;
 }
 
 .section_left ul {
-    list-style-type: none;
-
+    list-style: none;
+    padding: 0;
 }
 
-.section_left ul li {
-    padding: 1rem;
-    margin-top: 1rem;
-    background-color: #F7FAFF;
+.section_left li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
 }
 
-.section_left ul li a {
-    text-decoration: none;
-    color: #000;
-}
-
-.ul_img {
-    padding-top: 1rem;
-    width: 30px;
-    height: 30px;
-}
-li a {
-  font-weight: 400;
-  transition: 0.3s;
-}
-
-li i {
-  color: #999;
-  transition: 0.3s;
-  position: absolute;
-  right: 2rem;
-}
-
-li:hover a {
-  font-weight: 700;
-}
-
-li:hover i {
-  color: #ffff; 
-  background-color: #0095DA;
-}
+/* --- SAĞ TƏRƏF (60%) --- */
 .section_right {
     width: 60%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column; /* Axtarış və kartlar alt-alta */
+    align-items: center;    /* Mərkəzləşdirir */
 }
-.section_right_1{
-    width: 60%;
+
+/* Axtarış girişi - Sağ tərəfin daxilində 60% tutur */
+.section_right_1 {
+    width: 60%; 
+    margin-bottom: 40px;
 }
-.section_right_1 input{
+
+.section_right_1 input {
+    width: 100%;
     background-color: #F7FAFF;
     border: none;
     outline: none;
-    padding: 0.5rem;
-   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    padding: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+}
 
-}
-.section_right_2_card{
+/* --- KARTLARIN SAHƏSİ --- */
+.section_right_2 {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    flex-wrap: wrap;        /* Kartlar sığmayanda aşağı düşsün */
+    justify-content: center; /* Kartları mərkəzə yığır */
+    gap: 30px;              /* Kartlar arasındakı boşluq */
+}
+
+/* HƏR BİR KART - Sağ divin daxilində 40% yer tutur */
+.doctor_card_base {
+    width: 40%;             /* Sənin istədiyin: kartlar 40% olsun */
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+.doctor_card_base:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.doctor_card_base img {
     width: 100%;
-    gap: 5px;
+    height: 250px;          /* Şəkillərin boyunu eyniləşdirir */
+    object-fit: cover;      /* Şəkli dartmadan sığdırır */
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
-.section_right_2_card1,
-.section_right_2_card2,
-.section_right_2_card3,
-.section_right_2_card4{
-    width: 40%;
-}
-.section_right_2_card1 img,
-.section_right_2_card2 img,
-.section_right_2_card3 img,
-.section_right_2_card4 img{
-    width: 100%;
-}
-.section_right_2_card1 h3,
-.section_right_2_card2 h3,
-.section_right_2_card3 h3,
-.section_right_2_card4 h3{
+
+.doctor_card_base h3 {
     font-size: 18px;
     font-weight: 700;
+    margin-bottom: 8px;
+    color: #333;
 }
-.section_right_2_card1 p,
-.section_right_2_card2 p,
-.section_right_2_card3 p,
-.section_right_2_card4 p{
+
+.doctor_card_base p {
     font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+    height: 40px;           /* İxtisas yazıları üçün sabit yer */
+}
+
+.details_btn {
+    display: inline-block;
+    background-color: #00A6F2;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
 }
