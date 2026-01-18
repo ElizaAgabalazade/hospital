@@ -1,9 +1,13 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App"; // ⬅️ .jsx YAZMA!
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom' // Importun düzgünlüyünü yoxla
+import App from './App.jsx'
+import './index.css'
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </StrictMode>
+)

@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Anar Əliyev",
+    "specialty": "Kardioloq",
+    "experience": "10 il",
+    "info": "Ürək-damar xəstəlikləri mütəxəssisi."
+  },
+  {
+    "id": 2,
+    "name": "Dr. Leyla Qasımova",
+    "specialty": "Pediatr",
+    "experience": "8 il",
+    "info": "Uşaq xəstəlikləri üzrə mütəxəssis."
+  }
+]

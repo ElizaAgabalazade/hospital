@@ -1,0 +1,160 @@
+header {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.header_top {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: #FAFAFA;
+}
+
+.header_top_left,
+.header_top_right {
+    width: 50%;
+}
+
+.header_top_left {
+    display: flex;
+    /* background: red; */
+    padding: 0.2rem;
+
+}
+
+
+.header_top_left img {
+    width: 20px;
+    height: 14px;
+    margin: 6px;
+}
+
+.header_top_right {
+    /* background: blue; */
+    display: flex;
+    /* Flex-i aktiv edirik */
+    justify-content: flex-end;
+    /* Sağa yığır */
+    align-items: center;
+    /* Yatayda mərkəzləşdirir (opsiyonel, hündürlüyə görə) */
+
+}
+
+.div_sign_in {
+    margin-right: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem;
+    width: 100%;
+    gap: 5px;
+}
+
+
+.div_sign_in a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #8A8A8A;
+}
+
+.class_of_languageselect {
+    display: flex;
+}
+
+.class_of_languageselect img {
+    width: 15px;
+}
+
+#languageSelect {
+    padding: 2px 6px;
+    font-size: 10px;
+    margin-right: 1rem;
+    background: #FAFAFA;
+    border: none;
+    outline: none;
+}
+
+/*  BURA QEDER HAZIR */
+.header_bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header_bottom_left {
+    width: 20%;
+}
+
+.header_bottom_left img {
+    width: 100%;
+}
+
+.header_bottom_middle {
+    width: 50%;
+
+}
+
+.header_bottom_middle a {
+    color: #8A8A8A;
+    text-decoration: none;
+
+}
+
+.header_bottom_middle ul {
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.header_bottom_right {
+    width: 30%;
+    display: flex;
+    gap: 5px;
+    position: relative;
+    padding: 5px;
+
+}
+
+.search_box {
+    width: 55%;
+    margin-top: 1rem;
+
+}
+
+.header_bottom_right input {
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    outline: none;
+    padding: 8px 8px 8px 30px;
+    /* sol padding ikon üçün yer açır */
+    color: #8A8A8A;
+    width: 100%;
+
+}
+
+.header_bottom_right input::placeholder {
+    color: #8A8A8A;
+    margin-left: 15px;
+
+}
+
+.fa-magnifying-glass {
+    position: absolute;
+    left: 0.6rem;
+    top: 1.8rem;
+    color: #8A8A8A;
+
+}
+
+.call_center {
+    width: 40%;
+    margin-top: 1rem;
+}
+
+.call_center img {
+    width: 100%;
+}
+
