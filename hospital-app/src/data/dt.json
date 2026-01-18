@@ -1,10 +1,16 @@
 [
   {
     "id": 1,
+    "name": "Dr. Nigar Muradova",
+    "specialty": "Otonevroloq",
+    "experience":  "5 il",
+    "info": "Qulaq Burun Bo]az c'rrah."
+  },
+  {"id": 2,
     "name": "Dr. Anar Əliyev",
-    "specialty": "Kardioloq",
-    "experience": "10 il",
-    "info": "Ürək-damar xəstəlikləri mütəxəssisi."
+    "specialty" : "Kardioloq",
+    "experience" : "10 il",
+    "info" : "Ürək-damar xəstəlikləri mütəxəssisi."
   },
   {
     "id": 2,

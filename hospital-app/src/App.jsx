@@ -1,8 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Doctors from './pages/Doctors';
-import DoctorDetail from './pages/DoctorDetail';
 import Header from './components/Header';
+import DoctorDetail from './pages/DoctorDetail';
 import Footer from './components/Footer'; // Import et
 
 const App =() =>{
@@ -12,7 +12,8 @@ const App =() =>{
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* Digər routelar bura gələcək */}
+          <Route path="/doctor" element={<Doctors />} />
+          <Route path="/doctor/:id" element={<DoctorDetail />} />
         </Routes>
       </main>
       <Footer />
