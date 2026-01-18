@@ -12,6 +12,92 @@
     margin-bottom: 50px;
 }
 
+.section1_right_top h3 {
+    color: #0095DA;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 1rem 3rem;
+}
+
+.section1_right_top p {
+    margin: 0rem 3rem;
+    margin-left: 3rem;
+    font-size: 20px;
+
+}
+
+/* İkonların yerləşdiyi ana qutu */
+.sectiom1_right_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* İkonlar arasında bərabər məsafə qoyur */
+    background: #ffffff;
+    padding: 20px;
+    border: 1px solid #6666665C;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    /* Yüngül kölgə */
+    margin-top: 20px;
+}
+
+/* Hər bir ikon qrupunun (icon + p + span) dizaynı */
+.section_right_bottom_1,
+.section_right_bottom_2,
+.section_right_bottom_3 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    width: 40%;
+    flex: 1;
+    /* Hər biri bərabər yer tutur */
+}
+
+/* Şəkillərin (ikonların) ölçüsü */
+.icon_1 {
+    margin-left: 4rem;
+
+}
+
+.sectiom1_right_bottom img {
+    width: 34px;
+    /* İkonun eni */
+    height: 40px;
+    /* İkonun hündürlüyü */
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+/* Rəqəmlər üçün (məs: 5 il, 0) */
+.sectiom1_right_bottom p {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+}
+
+/* Yazılar üçün (məs: Təcrübə, Rəylər) */
+.sectiom1_right_bottom span {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Aradakı xətlərin (hr) dizaynı */
+.hr_of_icon1_and2,
+.hr_of_icon {
+    position: absolute;
+    right: 0;
+    top: 20%;
+    height: 60%;
+    width: 1px;
+    border: none;
+    background-color: #eee;
+    /* İncə ayırıcı xətt */
+    margin: 0;
+}
+
 .section1_left {
     width: 40%;
     display: flex;
@@ -28,16 +114,6 @@
     padding-left: 20px;
 }
 
-/* Rəqəmlər olan hissə */
-.sectiom1_right_bottom {
-    display: flex;
-    justify-content: space-around;
-    background: #fff;
-    border: 1px solid #eee;
-    padding: 20px;
-    margin-top: 40px;
-    border-radius: 10px;
-}
 
 .vertical_divider {
     width: 1px;
@@ -54,16 +130,19 @@
 }
 
 .gray_bg {
-    background-color: #6BB52B0F; /* Sənin seçdiyin yaşılımtıl rəng */
+    background-color: #6BB52B0F;
+    /* Sənin seçdiyin yaşılımtıl rəng */
     border-radius: 10px;
 }
 
 .row_left {
-    width: 30%; /* Sol başlıqlar üçün sabit yer */
+    width: 30%;
+    /* Sol başlıqlar üçün sabit yer */
 }
 
 .row_right {
-    width: 70%; /* Sağ tərəf daha geniş olsun */
+    width: 70%;
+    /* Sağ tərəf daha geniş olsun */
 }
 
 .row_left h3 {
@@ -72,7 +151,8 @@
     color: #333;
 }
 
-.row_right p, .row_right li {
+.row_right p,
+.row_right li {
     font-size: 18px;
     line-height: 1.6;
     color: #444;
@@ -99,7 +179,8 @@
 /* Tab Menu */
 .section_tab_menu {
     display: flex;
-    gap: 40px;
+    justify-content: space-around;
+    width: 100%;
     border-bottom: 1px solid #eee;
     margin-bottom: 30px;
     padding: 0 5%;
@@ -114,4 +195,134 @@
 .active_tab {
     border-bottom: 3px solid #0095DA;
     color: #0095DA;
+}
+
+@media (max-width: 1280px) {
+    .section_1 {
+        display: flex;
+        width: 100%;
+        align-items: center; /* Şəkil və sağ tərəfi ortalayır */
+        justify-content: space-between;
+        background: transparent; /* Qara fonu yoxlamaq üçün qoymuşdunsa silə bilərsən */
+    }
+
+    .section1_left {
+        width: 35%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .section1_left img {
+        width: 90%; /* Şəkil sol tərəfi tam doldursun */
+        height: auto;
+        border-radius: 15px;
+    }
+
+    .section1_right {
+        width: 60%; /* Sağ tərəfə daha çox yer veririk */
+        display: flex;
+        flex-direction: column; /* Top və Bottom elementlərini alt-alta yığır */
+        justify-content: center;
+    }
+
+    .section1_right_top {
+        margin-bottom: 2rem; /* Ad ilə ikonlar arasında məsafə */
+    }
+
+    .section1_right_top h3 {
+        font-size: 26px;
+        margin-left: 1.5rem;
+        color: #0095DA;
+    }
+
+    .section1_right_top p {
+        font-size: 18px;
+        margin-left: 1.5rem;
+        color: #555;
+    }
+
+    /* BURAYA DİQQƏT: Klas adın JSX-də 'sectiom1' (m ilə) olduğu üçün belə yazıram */
+    .sectiom1_right_bottom {
+        width: 90% !important; /* 50% çox dar idi, 90% etdik */
+        display: flex;
+        flex-direction: row; /* İkonlar öz daxilində yan-yana düzülsün */
+        justify-content: space-around;
+        align-items: center;
+        padding: 15px;
+        gap: 10px;
+        margin-top: 1rem;
+        border: 1px solid #eee;
+        border-radius: 12px;
+    }
+
+    .section_right_bottom_1, 
+    .section_right_bottom_2, 
+    .section_right_bottom_3 {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .stat_text p {
+        font-size: 16px !important;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .stat_text span {
+        font-size: 12px;
+        color: #777;
+    }
+
+    /* Ayırıcı xətləri gizlətmək və ya kiçiltmək olar */
+    .hr_of_icon1_and2, .hr_of_icon {
+        height: 30px;
+        background-color: #ddd;
+    }
+}
+/* 1024px-dən kiçik ekranlar (Planşetlər üçün vacibdir) */
+@media (max-width: 1024px) {
+    .section_1 {
+        flex-direction: column;
+        /* Şəkil və məlumat alt-alta düşsün */
+        align-items: center;
+        text-align: center;
+    }
+
+    .section1_left,
+    .section1_right {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .section1_left img {
+        width: 50%;
+        /* Planşetdə şəkil çox böyük olmasın */
+        margin-bottom: 20px;
+    }
+
+    .section1_right_top h3,
+    .section1_right_top p {
+        margin: 10px 0;
+    }
+
+    .sectiom1_right_bottom {
+        margin: 20px auto;
+        flex-wrap: wrap;
+        /* İkonlar sığmasa aşağı düşsün */
+    }
+
+    .detail_row {
+        flex-direction: column;
+        /* Başlıq və mətn alt-alta */
+    }
+
+    .row_left,
+    .row_right {
+        width: 100%;
+    }
+
+    .row_left h3 {
+        margin-bottom: 10px;
+    }
 }
