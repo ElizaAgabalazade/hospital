@@ -8,9 +8,6 @@
     height: 400px;
     position: relative;
 }
-
-
-
 .section_1 h2 {
     font-size: 50px;
     font-weight: 700;
@@ -18,90 +15,43 @@
 position: absolute;
 left: 4rem;
 top: 6rem;
-
-
 }
-
-
-
 .button_png {
   left: 1rem;
   position: absolute;
   top: 20rem;
-
 }
-
-
-
 .section_2 {
-
     margin: 2rem;
 
 }
 
 
-
 .section_2 img {
-
-    width: 100%;
-
+width: 100%
 }
-
-
-
 .section_3 {
-
     display: flex;
-
     background: #00A6F2;
-
     overflow: hidden;
-
     width: 100%;
-
     padding: 20px 0;
-
     flex-direction: column;
-
     transition: transform 0.4s ease-in-out;
-
     gap: 20px;
-
 }
-
-
-
 .section_3_top {
-
     display: flex;
-
 }
-
-
-
 .section_3_top h2 {
-
     color: #fff;
-
     margin: 1rem 5rem;
-
 }
-
-
-
-
-
 .carousel-wrapper {
-
     overflow: hidden;
-
     width: 80%;
-
     margin: 0 auto;
-
 }
-
-
 
 .carousel {
 
@@ -112,53 +62,23 @@ top: 6rem;
     transition: transform 0.4s ease-in-out;
 
 }
-
-
-
 .carousel img {
-
     width: calc((100% - 40px) / 3);
-
     height: auto;
-
     border-radius: 10px;
-
 }
-
-
-
-
-
 /*    Əgər istəsəni bu aşağıdakı kod şəkildə şəkillərin yarısını sola aparır *----- mən belə daha çox xoşlayıram seçim sizin/
-
- 
-
 .carousel:hover {
-
     animation-play-state: paused;
-
    }
-
-
-
 @keyframes scroll {
-
     0% {
-
         transform: translateX(0);
-
     }
-
     100% {
-
         transform: translateX(-50%);
-
     }
-
-     
-
 }
-
 */
 .carousel-btn {
     transform: translateY(-50%);
@@ -174,13 +94,11 @@ top: 6rem;
 }
 
 
-
 .carousel-btn:hover,
 .section_4 button:hover {
     background-color: #fff;
     color: #00A6F2;
 }
-
 
 
 .carousel-btn.left {
@@ -195,299 +113,160 @@ top: 6rem;
 }
 
 
-
 .section_4 {
-
     background: #F5F5F5;
-
     position: relative;
-
     display: flex;
-
     width: 100%;
-
     flex-direction: column;
-
     padding-bottom: 4rem;
-
 }
-
 
 
 .section_4_top {
-
     display: flex;
-
     width: 100%;
-
     position: relative;
-
 }
-
-
-
 .section_4 h2 {
-
     margin: 3rem 5rem;
-
     width: 70%;
-
-
-
 }
-
-
-
 .section_4 button {
-
     width: 5%;
-
     height: 35px;
-
     color: #fff;
-
     background: #00A6F2;
-
     border: 1px solid #fff;
-
     padding: 5px;
-
     cursor: pointer;
-
     z-index: 10;
-
     font-size: 10px;
-
     border-radius: 50%;
-
     cursor: pointer;
-
     margin-top: 2.5rem;
-
 }
-
-
 
 .left1 {
-
     width: 10px;
-
 }
-
-
-
 .right1 {
 
     width: 10px;
-
 }
-
-
-
 .ection_4_bottom {
-
-
-
     width: 100%;
-
 }
-
 
 
 .section_4_carousel_wrapper {
-
     overflow: hidden;
-
     width: 80%;
-
     margin: 0 auto;
-
 }
 
-
-
 .section_4_carousel {
-
     display: flex;
-
     gap: 20px;
-
     transition: transform 0.4s ease-in-out;
 
 }
 
 
-
 .section_4_item {
-
     flex: 0 0 calc((100% - 40px) / 4);
-
     /* 3 kart */
-
     background: #fff;
-
     border-radius: 12px;
-
     padding: 10px;
-
     box-sizing: border-box;
-
 }
-
 
 
 .section_4_item img {
-
     width: 100%;
-
     border-radius: 10px;
-
 }
-
-
-
 .section_4_item p {
-
     margin-top: 1rem;
-
     font-size: 20px;
-
 }
-
 
 
 .section_5 {
-
     display: flex;
-
     width: 100%;
-
     margin-top: 1rem;
-
 }
-
 
 
 .section_5_left {
-
     width: 50%;
-
     margin-top: 3rem;
-
 }
-
 
 
 .section_5_left h3 {
-
     font-weight: 700;
-
     font-size: 40px;
-
     text-align: center;
-
 }
-
 
 
 .section_5_left p {
-
     margin-top: 0.5rem;
 
     margin-left: 7.2rem;
-
     width: 70%;
-
     font-size: 22px;
-
 }
-
 
 
 .section_5_right {
-
     width: 50%;
-
 }
-
 
 
 .section_6 {
-
     width: 100%;
-
     flex-wrap: wrap;
-
     margin-top: 2rem;
-
 }
-
-
-
 .section_6 h3 {
-
     width: 100%;
-
     margin-left: 6rem;
-
     font-weight: 700;
-
     font-size: 40px;
-
 }
-
 
 
 .section_6_cards {
-
     display: flex;
-
     width: 100%;
-
     margin-top: 2rem;
-
-
-
 }
-
 
 
 .section_6_1 {
 
     position: relative;
-
     background: #f9f9f9;
-
     border-radius: 12px;
-
     width: 25%;
-
     margin: 0 auto;
-
-
-
 }
-
 
 
 .icon {
-
     position: absolute;
-
     right: 20px;
-
     top: 5px;
-
 }
-
 
 
 .section_6_1 img {
-
     margin-left: 18px;
-
 }
-
 
 
 .section_6_1 h4 {
@@ -497,31 +276,17 @@ top: 6rem;
 }
 
 .section_6_1 p {
-
     color: #1C1C1C;
-
     margin-top: 5px;
-
     margin-left: 18px;
-
-
-
 }
 
 
-
 .stars i {
-
     color: #0095DA;
-
     width: 2px;
-
     margin-left: 18px;
-
     margin-top: 5px;
-
-
-
 }
 @media(max-width:1280px){
     /* Ümumi konteyner - hər şeyi mərkəzdə saxlayır */
@@ -672,3 +437,4 @@ top: 6rem;
     position: relative;
 }
 }
+
