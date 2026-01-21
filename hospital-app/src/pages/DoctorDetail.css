@@ -26,18 +26,17 @@
 
 }
 
-/* İkonların yerləşdiyi ana qutu */
+/* İkonların yerləşdiyi ana qutu yerim */
 .sectiom1_right_bottom {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* İkonlar arasında bərabər məsafə qoyur */
+    /* İkonlar arasında bərabər məsafə qoyuram*/
     background: #ffffff;
     padding: 20px;
     border: 1px solid #6666665C;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    /* Yüngül kölgə */
     margin-top: 20px;
 }
 

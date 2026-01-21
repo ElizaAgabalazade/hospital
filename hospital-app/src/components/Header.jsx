@@ -12,10 +12,9 @@ const Header = () => {
   const [isCentersOpen, setIsCentersOpen] = React.useState(false);
   return (
     <header id="top">
-      {/* Header Top */}
       <div className="header_top">
         <div className="header_top_left">
-          {/* Şəkillər yerinə ikon istifadə etmək daha yaxşıdır, amma şəkildirsə src-ni düzəltməlisən */}
+          {/* Şəkillər yerinə ikon istifadə etmək daha yaxşıdır, amma şəkildirsə src-ni düzəldirəm */}
           <FaFacebookF className="facebook_icon" style={{ cursor: 'pointer', marginRight: '10px' }} />
           <FaInstagram style={{ cursor: 'pointer' }} />
         </div>
@@ -36,7 +35,7 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Header Bottom */}
+      {/* Header Bottom  hissəm*/}
       <div className="header_bottom">
         <div className="header_bottom_left">
           <Link to="/">
@@ -47,18 +46,18 @@ const Header = () => {
         <div className="header_bottom_middle">
           <nav>
             <ul>
-           {/* HAQQIMIZDA - Əsas tetikleyici */}
+           {/* HAQQIMIZDA */}
             <li 
               className="dropdown_parent"
               onMouseEnter={() => setIsAboutOpen(true)}
               onMouseLeave={() => {
                 setIsAboutOpen(false);
-                setIsCentersOpen(false); // Haqqımızda-dan çıxanda hamısı bağlansın
+                setIsCentersOpen(false); 
               }}
             >
               <Link to="/about">Haqqımızda</Link>
 
-              {/* Yalnız Haqqımızda üzərinə gələndə açılan birinci div */}
+              
               {isAboutOpen && (
                 <div className="toggle_part_1">
                   <ul>
@@ -69,7 +68,7 @@ const Header = () => {
                     <li><Link to="#">Sertifikatlar</Link></li>
                     <li><Link to="#">Beynəlxalq əməkdaşlıq</Link></li>
                     
-                    {/* MƏRKƏZLƏRİMİZ - İkinci tetikleyici */}
+                  
                     <li 
                       className="nested_parent"
                       onMouseEnter={() => setIsCentersOpen(true)}
@@ -77,7 +76,6 @@ const Header = () => {
                     >
                       <Link to="#">Mərkəzlərimiz »</Link>
 
-                      {/* Yalnız Mərkəzlərimiz üzərinə gələndə açılan ikinci div */}
                       {isCentersOpen && (
                         <div className="togglePart_1_hidden">
                           <ul>
@@ -93,7 +91,6 @@ const Header = () => {
                       )}
                     </li>
 
-                    {/* HƏKİMLƏRİMİZ - Doctor.jsx-ə gedən link */}
                     <li><Link to="/doctor">Həkimlərimiz</Link></li>
                     <li><Link to="#">Məmnunluq anketi</Link></li>
                   </ul>

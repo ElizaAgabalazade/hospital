@@ -51,7 +51,6 @@ const Doctors = () => {
 
     return (
         <section className="doctors_section">
-            {/* SOL TƏRƏF - Menyu */}
             <div className="section_left">
                 <ul>
                     <li><Link to="#">Tariximiz</Link><FaChevronRight /></li>
@@ -76,7 +75,6 @@ const Doctors = () => {
                 </div>
 
                 <div className="section_right_2">
-                    {/* YÜKLƏNMƏ DURUMU (UX Tələbi) */}
                     {loading ? (
                         <p className="loading_text">Həkimlər yüklənir...</p>
                     ) : (
@@ -95,7 +93,6 @@ const Doctors = () => {
                                 </div>
                             ))}
 
-                            {/* Nəticə tapılmadıqda */}
                             {!loading && filteredDoctors.length === 0 && (
                                 <p className="no-result">Axtarışa uyğun həkim tapılmadı.</p>
                             )}
